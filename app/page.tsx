@@ -6,11 +6,11 @@ import {recentSessions} from "@/constants";
 const Page = () => {
   return (
     <main>
-      <h1 className='text-2xl underline'>Popular Companions</h1>
+      <h1 className='text-2xl'>Popular Companions</h1>
         <section className="home-section">
             <CompanionCard
                 id="123"
-                name="Neura the lavda Explorer"
+                name="Neura the Brainy Explorer"
                 topic="Neural Network of the Brain"
                 subject="science"
                 duration={45}
@@ -18,19 +18,19 @@ const Page = () => {
             />
             <CompanionCard
                 id="456"
-                name="Neura the lavda Explorer"
-                topic="Neural Network of the Brain"
-                subject="science"
-                duration={45}
-                color="#ffda6e"
+                name="Countsy the Number Wizard"
+                topic="Derivatives and Integrals"
+                subject="maths"
+                duration={30}
+                color="#e5d0ff"
             />
             <CompanionCard
                 id="789"
-                name="Neura the lavda Explorer"
-                topic="Neural Network of the Brain"
-                subject="science"
-                duration={45}
-                color="#ffda6e"
+                name="Verba the Vocabulary Builder"
+                topic="language"
+                subject="English Literature"
+                duration={30}
+                color="#BDE7FF"
             />
         </section>
         <section className="home-section">

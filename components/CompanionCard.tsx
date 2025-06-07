@@ -10,7 +10,6 @@ interface CompanionCardProps {
     subject: string;
     duration: number;
     color: string;
-    bookmarked: boolean;
 }
 
 const CompanionCard = ({
@@ -20,7 +19,6 @@ const CompanionCard = ({
                            subject,
                            duration,
                            color,
-                           bookmarked,
                        }: CompanionCardProps) => {
 
     return (
