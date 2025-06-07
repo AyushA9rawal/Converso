@@ -1,13 +1,48 @@
-import { Button } from '@/components/ui/button'
-
+import { Button } from '@/components/ui/button';
+import CompanionCard from "@/components/CompanionCard";
+import CompanionsList from "@/components/CompanionsList";
+import Cta from "@/components/CTA";
+import {recentSessions} from "@/constants";
 const Page = () => {
   return (
-    <div>
-      <h1 className='text-2xl underline'>Welcome to my SaaS App</h1>
-      <Button>
-        Let's get started
-      </Button>
-    </div>
+    <main>
+      <h1 className='text-2xl underline'>Popular Companions</h1>
+        <section className="home-section">
+            <CompanionCard
+                id="123"
+                name="Neura the lavda Explorer"
+                topic="Neural Network of the Brain"
+                subject="science"
+                duration={45}
+                color="#ffda6e"
+            />
+            <CompanionCard
+                id="456"
+                name="Neura the lavda Explorer"
+                topic="Neural Network of the Brain"
+                subject="science"
+                duration={45}
+                color="#ffda6e"
+            />
+            <CompanionCard
+                id="789"
+                name="Neura the lavda Explorer"
+                topic="Neural Network of the Brain"
+                subject="science"
+                duration={45}
+                color="#ffda6e"
+            />
+        </section>
+        <section className="home-section">
+            <CompanionsList
+            title="Recently completely sessions"
+            companions={recentSessions}
+            classNames="w-2/3 max-lg:w-full"
+            />
+            <Cta />
+
+        </section>
+    </main>
   )
 }
 
