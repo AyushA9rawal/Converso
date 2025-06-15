@@ -3,7 +3,6 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { formUrlQuery, removeKeysFromUrlQuery } from "@jsmastery/utils";
-import { set } from "zod/v4-mini";
 
 const SearchInput = () => {
   const pathname=usePathname();
