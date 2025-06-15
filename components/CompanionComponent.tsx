@@ -69,7 +69,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             vapi.off('speech-start', onSpeechStart);
             vapi.off('speech-end', onSpeechEnd);
         }
-    }, []);
+    }, [ companionId ]);
 
     const toggleMicrophone = () => {
         const isMuted = vapi.isMuted();
@@ -86,7 +86,7 @@ const CompanionComponent = ({ companionId, subject, topic, name, userName, userI
             serverMessages: [],
         }
 
-        // @ts-expect-error
+        // @ts-expect-error: // vapi.start expects a function that returns a Promise, but configureAssistant is not typed as such
         vapi.start(configureAssistant(voice, style), assistantOverrides)
     }
 
