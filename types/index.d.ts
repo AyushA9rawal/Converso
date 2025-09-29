@@ -4,7 +4,6 @@
 //   image?: string;
 //   accountId: string;
 // };
-
 enum Subject {
   maths = "maths",
   language = "language",
@@ -15,6 +14,10 @@ enum Subject {
   economics = "economics",
   finance = "finance",
   business = "business",
+  music = "music",
+  health = "health",
+  philosophy = "philosophy",
+  currentAffairs = "currentAffairs"
 }
 
 type Companion = Models.DocumentList<Models.Document> & {
